@@ -2,12 +2,11 @@ let calculoImc = (peso, altura) =>{
     console.log('Hola tu peso es:',peso(), 'kg',  'y tu altura es:', altura(),'m' )
     const Imc = peso() / (altura()*2)
     console.log('Por lo que tu indice de masa corporal es:', Imc)
-    return Imc
 }
 
 
 
-let peso = () => 40
+let peso = () => 70
 let altura  = () => 1.65
 
 let x = calculoImc(peso,altura)
