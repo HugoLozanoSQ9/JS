@@ -14,7 +14,9 @@ let x = calculoImc(peso,altura)
 
 
 let rangoDePeso = () => {
-    if (x >= 30){
+    if (isNaN(x)){
+        console.log('Los errores iniciales no son validos')
+    }else if (x >= 30){
         console.log(`Lamento comentarte que tu IMC es de ${x} y te encuentras en el rango de obesidad por lo que es muy importante que comiences una dieta o a hacer ejercicio`)
     }else if(25<= x && x <29.9 ){
         console.log(`Lamento comentarte que tu IMC es de ${x} y te encuentras en el rango de sobrepeso por lo que es muy importante que comiences una dieta o a hacer ejercicio`)        
