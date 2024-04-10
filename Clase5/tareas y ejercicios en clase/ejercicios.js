@@ -22,20 +22,20 @@ const ex1 = (text,position) =>{
     return select
     }
 } 
-//console.log(ex1(phrase,10))
+console.log(ex1(phrase,5))
 
 const ex2 = (text, position) =>{
     const arreglo = text.split(' ')
     arreglo.splice(position,1)
     return arreglo.join(' ')
 }
-//console.log(ex2(phrase,4))
+console.log(ex2(phrase,4))
 
 const ex3 = (text)=>{
     const arreglo = text.split(' ')
     const array = []
     for (let i=0; i< arreglo.length;i++){
-        if (arreglo[i].length <=3 ){
+        if (arreglo[i].length<=3){
             arreglo.splice(arreglo[i],1)
         }
         array.push(arreglo[i])
@@ -47,6 +47,6 @@ console.log(ex3(phrase))
 
 const ex4 = (text) =>{
     const arreglo = text.split(' ') //devuelve el arreglo
-     return arreglo.reverse()
+    return arreglo.reverse().join(' ')
 }
-//console.log(ex2(phrase))
+console.log(ex4(phrase))
