@@ -22,14 +22,14 @@ const ex1 = (text,position) =>{
     return select
     }
 } 
-console.log(ex1(phrase,5))
+//console.log(ex1(phrase,5))
 
 const ex2 = (text, position) =>{
     const arreglo = text.split(' ')
     arreglo.splice(position,1)
     return arreglo.join(' ')
 }
-console.log(ex2(phrase,4))
+//console.log(ex2(phrase,4))
 
 const ex3 = (text)=>{
     const arreglo = text.split(' ')
@@ -49,4 +49,4 @@ const ex4 = (text) =>{
     const arreglo = text.split(' ') //devuelve el arreglo
     return arreglo.reverse().join(' ')
 }
-console.log(ex4(phrase))
+//console.log(ex4(phrase))

@@ -37,6 +37,8 @@ Son funciones sin nombre y que a su vez solo se ocupan donde se declaran
 propiedades: definiciones del objeto
 metodos: son las acciones que va a realizar el objeto 
 
+Se ocupan las funciones convencionales solo si estamos definiendo los métodos de un objeto, caso contrario se ocupa la función flecha
+
 Se ocupan mucho con angular y Vue
 
 const vaso{
