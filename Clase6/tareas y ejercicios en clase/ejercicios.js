@@ -53,8 +53,7 @@ el nombre obtenido se elimina (se puede mover a otra lista para no afectar el ar
 
 */
 
-const listaNombres=['Hugo Lozano Rivera', 'Juan Lozano Rivera', 'Sebastian Lozano Rivera', 'Israel Salinas Martinez'
-]
+const listaNombres=['Hugo Lozano Rivera', 'Juan Lozano Rivera', 'Sebastian Lozano Rivera', 'Israel Salinas Martinez']
 
 //Ruleta con lista paralela 
 const ruleta = (lista) =>{
