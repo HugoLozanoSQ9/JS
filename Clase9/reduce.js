@@ -74,6 +74,21 @@ const transformData = (dogsArray) =>{
 
 transformData(canes)
 
+// REDUCE
+
+
+const reduceData = (dogsArray) =>
+  dogsArray.reduce(
+    (accum, current) =>
+      current.vacunado
+        ? { ...accum, vacunados: [...accum.vacunados, current] }
+        : { ...accum, noVacunados: [...accum.noVacunados, current] },
+    {
+      vacunados: [],
+      noVacunados: [],
+    }
+  );
+
 // let letters = ['a','b']
 // let newLetters = [...letters,'c']
 

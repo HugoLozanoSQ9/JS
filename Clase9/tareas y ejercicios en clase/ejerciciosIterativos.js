@@ -57,6 +57,59 @@ const canes = [
 /*
 1.-Necesito conocer la edad promedio de todos los perros
 2.-Necesito obtener una lista de perros basados en el pais al que pertenecen
-3.-Necesito una lista dw los códigos postales de los perros
+3.-Necesito una lista de los códigos postales de los perros
 4.-Necesito una lista que contenga la lista de países a los que pertenecen los perros, pero sin repetidos (solo debe aparecer Mexico, Ecuador y Colombia)
 */
+
+
+
+let edadPromedio = (listaDeCanes) => { //Ejercicio 1
+  let sumaDeEdades = 0
+  listaDeCanes.forEach(edadPorCan => {
+    sumaDeEdades += edadPorCan.edad
+  });
+
+  return sumaDeEdades / listaDeCanes.length
+  
+}
+
+//console.log(edadPromedio(canes))
+
+let edadPerruna = (listaDeCanes) =>{  //Ejercicio 2
+
+  let listaDeCanesModificados = listaDeCanes.map((can)=>{
+    let infoCan = {...can}
+    let formato = `${infoCan.nombre} : ${infoCan.pais}`
+    return formato
+  })
+
+  return listaDeCanesModificados
+}
+
+//console.log(edadPerruna(canes))
+
+let codigosPostalesPerrunos = (listaDeCanes) =>{  //Ejercicio 3
+
+  let listaDeCanesModificados = listaDeCanes.map((can)=>{
+    let infoCan = {...can}
+    let codigoPostalPerruno = `${infoCan.nombre} : ${infoCan.direccion.codigoPostal}`
+    return codigoPostalPerruno
+  })
+
+  return listaDeCanesModificados
+}
+//console.log(codigosPostalesPerrunos(canes))
+
+
+const reduceData = (dogsArray) =>{
+  dogsArray.reduce((accum,current)=>{
+    if(current.pais=== 'México'){
+    let newCan = {...accum,pais:[...accum.pais,current] }
+    return newCan
+  }
+  },{
+    pais : []
+  })
+
+}
+console.log(reduceData(canes))
