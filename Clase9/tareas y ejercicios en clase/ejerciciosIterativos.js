@@ -102,14 +102,13 @@ let codigosPostalesPerrunos = (listaDeCanes) =>{  //Ejercicio 3
 
 
 const reduceData = (dogsArray) =>{
-  dogsArray.reduce((accum,current)=>{
-    if(current.pais=== 'México'){
-    let newCan = {...accum,pais:[...accum.pais,current] }
-    return newCan
-  }
+  let result = dogsArray.reduce((accum,current)=>{
+    return { ...accum,pais: [...accum.pais, current.pais] }
+    
   },{
     pais : []
   })
+  return result
 
 }
 console.log(reduceData(canes))
