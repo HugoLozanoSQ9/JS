@@ -1,0 +1,10 @@
+Crear una lista de koders, usando el siguiente array:
+
+let koders = [
+    {
+        name:'Israel´,
+        lastName:'Salinas Martinez'
+    }
+]
+
+Usar list group de bootstrap 
