@@ -1,0 +1,30 @@
+.blog-card img {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.avatar{ 
+  border-radius: 50% ;
+}
+.avatar1{ 
+  border-radius: 50%;
+  width: 20% !important;
+  height: 100% !important;
+}
+.spanSpace{
+  padding-left: 10%;
+}
+.spanSpace2{
+  padding-left: 50%;
+}
+.buttonWidth{
+  padding-left: 40%;
+}
+.dimension{
+  
+  width: 80%;
+}
+
+
+/*# sourceMappingURL=main.css.map */

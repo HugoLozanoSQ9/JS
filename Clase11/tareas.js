@@ -505,7 +505,7 @@ const movies = [
         },[])
         return result
     }
-    //console.log(getGenero(movies))//Ex1
+    console.log(getGenero(movies))//Ex1
     const getDirectorsNames = (dataArray) =>{ //Ex.2
         let directorName = dataArray.reduce((accum,current) =>{
             return accum.includes(current.director) ? accum : [...accum, current.director]
