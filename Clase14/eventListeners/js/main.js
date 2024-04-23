@@ -14,7 +14,7 @@ handler o callback => ¿Qué? es lo que se verá
 
 /*¿Quien va a escuchar el evento?  */
 
-let testButton = document.getElementById('testButton')
+
 /* 
 testButton.addEventListener => ¿Qué? 
 'click' =>¿Cuando?
@@ -23,10 +23,6 @@ testButton.addEventListener => ¿Qué?
 }) => ¿Qué?
 
 */
-testButton.addEventListener('click', ()=> {
-    alert('Hola Koders')
-})
-
 
 /*
 Existen 3 eventos similares
@@ -36,3 +32,23 @@ keypress (cuando presiono la tecla ) acepta solo las teclas que tengan un valor
 keyup (cuando dejo de apretar la tecla)
 
 */
+
+/*Quien va a escuchar el evento*/
+
+let testButton = document.getElementById("test-button");
+
+testButton.addEventListener("click", () => {
+  alert("hola koders!");
+});
+
+let titleInput = document.getElementById("title-input");
+
+/*
+keydown
+keypress
+keyup
+*/
+titleInput.addEventListener("keyup", (event) => {
+  let text = event.target.value;
+  document.getElementById("title").innerText = text;
+});
