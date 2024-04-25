@@ -191,6 +191,8 @@ const blogEntries = [
   
     return entryItem;
   };
+
+  
   //Estructura de creación de autor
   const createAuthorItem = (entryObject) =>{
     let {autor} = entryObject
