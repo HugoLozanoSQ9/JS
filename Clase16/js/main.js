@@ -76,11 +76,34 @@ const printProducts = (someArr, wrapperId) => {
 let buttonSearch = document.getElementById('buttonSearch')
 let inputSearch = document.getElementById('inputSearch')
 
+
 buttonSearch.addEventListener('click', (event) => {
 
     let busqueda = inputSearch.value
    console.log(busqueda) //me da el texto completo del input
- 
+
+    for (let i = 0; i < busqueda.length; i++) {
+
+        const result = products.filter((product) => {
+
+            if (product.categoria.charAt(i) == busqueda.charAt(i)) {
+
+                console.log('Encontramos una coincidencia')
+                
+            }
+            else if (busqueda.charAt(i)== '' || busqueda.charAt(i)== ' '   ){
+                let mostrar = document.getElementById('divisor')
+               mostrar.classList.remove('d-none')
+               
+            }else{
+                let ocultar = document.getElementById('divisor')
+                ocultar.classList.add('d-none')
+            }
+        })
+
+        return result
+
+    }
 
 
 
