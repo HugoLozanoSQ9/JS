@@ -35,11 +35,11 @@ keyup (cuando dejo de apretar la tecla)
 
 /*Quien va a escuchar el evento*/
 
-let testButton = document.getElementById("test-button");
+// let testButton = document.getElementById("test-button");
 
-testButton.addEventListener("click", () => {
-  alert("hola koders!");
-});
+// testButton.addEventListener("click", () => {
+//   alert("hola koders!");
+// });
 
 let titleInput = document.getElementById("title-input");
 

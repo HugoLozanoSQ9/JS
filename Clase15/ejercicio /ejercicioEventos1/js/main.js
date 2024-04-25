@@ -54,8 +54,6 @@ let createList = (personData) =>{
    while(wrapper.firstChild){
     wrapper.removeChild(wrapper.firstChild)
    }
-
-
    someArr.forEach((person)=>{
      let list = createList(person)
      wrapper.append(list)
