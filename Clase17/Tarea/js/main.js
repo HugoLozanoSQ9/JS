@@ -30,6 +30,7 @@ const postKoder = async (koderObject) =>{
 }
 
 let boton = document.getElementById('postKoder')
+let koders = []
 
 boton.addEventListener('click',(event)=>{
     event.preventDefault()
@@ -42,7 +43,36 @@ boton.addEventListener('click',(event)=>{
     
     postKoder(object)
 
+    koders.push(object)
+    printKodersList(koders,'lista')
+
 })
+
+console.log(koders)
+
+const createKoderItem = (koderObject) =>{
+    let {name,lastName} = koderObject
+    let koderFullName = `Tu nombre completo es :${name} ${lastName}`
+
+    let koderListItem  = document.createElement('li')
+    koderListItem.classList.add('list-group-item')
+
+    let koderItemText = document.createTextNode(koderFullName)
+    koderListItem.append(koderItemText)
+    
+    return koderListItem
+
+
+}
+
+printKodersList = (kodersArray , wrapperId)=>{
+    let wrapper=document.getElementById(wrapperId)
+    kodersArray.forEach ((koder) =>{
+        let koderItem = createKoderItem(koder)
+        console.log(koderItem)
+        wrapper.append(koderItem)
+    })
+}
 
 //Para usar mi postKoder debo de ejecutar la función sin la key, unicamente los valores necesarios para crear un nuevo koder
 
