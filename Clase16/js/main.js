@@ -105,6 +105,4 @@ buttonSearch.addEventListener('click', (event) => {
 
     }
 
-
-
 })
