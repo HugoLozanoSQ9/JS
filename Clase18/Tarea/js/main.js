@@ -140,7 +140,6 @@ saveChangesButton.addEventListener('click', async (event) => {
 
 
 
-
 let printCards = async (orderArray, wrapperId) => {
     let wrapper = document.getElementById(wrapperId)
     //Esto me elimina los elementos anteriores para dar paso a los nuevos

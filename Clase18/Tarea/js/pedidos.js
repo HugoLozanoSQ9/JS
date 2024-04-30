@@ -1,4 +1,3 @@
-
 const otroProducto = document.getElementById('otroProducto')
 const quitarProducto=document.getElementById('quitarProducto')
 const boton= document.getElementById('guardar')
