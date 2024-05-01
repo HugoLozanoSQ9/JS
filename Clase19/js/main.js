@@ -53,7 +53,7 @@ let crearCard= (array)=>{
 
     let cardDiv = document.createElement('div')
     cardDiv.classList.add('card','mb-3')
-    cardDiv.setAttribute('style','width: 18rem;')
+    cardDiv.setAttribute('style','width:;')
 
     let cardDiv1 = document.createElement('div')
     cardDiv1.classList.add('card-body')
